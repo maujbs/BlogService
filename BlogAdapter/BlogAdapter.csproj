@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Adapters\Tributacion_Adapter.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Repository\Scripts\DB_v1.sql" />
+    <None Remove="Repository\Scripts\Scripts_MecaniControl_23-05-21.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Repository\Scripts\DB_v1.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+</Project>
